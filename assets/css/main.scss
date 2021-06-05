@@ -42,6 +42,13 @@
               }
          }     
 }
+
+#company-name{
+    color:gray ;
+    span{
+        color: $hover-color1;
+    }
+}
 .main {
     background-color: gray;
 }

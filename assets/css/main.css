@@ -16,9 +16,10 @@ html {
 }
 
 .menu .bar1, .menu .bar2, .menu .bar3 {
-  width: 28px;
+  width: 20px;
   height: 4px;
-  background-color: #333;
+  background-color: #b9b9b9;
+  border-radius: 10px;
   margin: 4px 0;
 }
 
@@ -28,8 +29,57 @@ html {
   }
 }
 
-.active {
-  visibility: hidden;
+.slide__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 14px;
+}
+
+.slide__button button {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="radio"]:checked::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 9px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #bcd546;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+input[type="radio"]::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 9px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: gray;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .footer {
@@ -103,6 +153,14 @@ html {
   .nav .nav1 .list .list-items a img {
     visibility: hidden;
   }
+}
+
+#company-name {
+  color: gray;
+}
+
+#company-name span {
+  color: #b9d448;
 }
 
 .main {
