@@ -7,6 +7,7 @@
 
 html {
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 .menu {
@@ -29,6 +30,10 @@ html {
 
 .active {
   visibility: hidden;
+}
+
+.footer {
+  background-color: aquamarine;
 }
 
 .nav {
@@ -102,9 +107,5 @@ html {
 
 .main {
   background-color: gray;
-}
-
-.footer {
-  background-color: green;
 }
 /*# sourceMappingURL=main.css.map */
