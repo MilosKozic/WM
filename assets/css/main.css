@@ -86,11 +86,7 @@ input[type="radio"] {
   background-color: aquamarine;
 }
 
-.nav {
-  background: white;
-}
-
-.nav .nav1 {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,62 +97,54 @@ input[type="radio"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-bottom: 5px solid;
+  margin-top: 4px;
+  padding-bottom: 4px;
   -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
      border-image: -webkit-gradient(linear, left top, right top, from(#b9d448), to(#3a75b8)) 100;
      border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
 }
 
-.nav .nav1 .list {
+nav .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   list-style: none;
 }
 
-.nav .nav1 .list .list-items a {
+nav .list .list-items a {
   text-decoration: none;
-  margin: auto 5px;
 }
 
 @media (max-width: 767px) {
-  .nav .nav1 .list .list-items a span {
+  nav .list .list-items a span {
     visibility: hidden;
   }
 }
 
-.nav .nav1 .list .list-items a img {
-  width: 20px;
-  height: 20px;
-}
-
-@media screen and (min-width: 767px) {
-  .nav .nav1 .list .list-items a img {
+@media screen and (min-width: 768px) {
+  .icons {
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .nav .nav1 .list .list-items a img {
+  .icons {
     visibility: hidden;
   }
 }
 
 #company-name {
   color: gray;
+  position: absolute;
+  left: 21px;
 }
 
 #company-name span {
@@ -165,5 +153,63 @@ input[type="radio"] {
 
 .main {
   background-color: gray;
+}
+
+#search-btn {
+  position: absolute;
+  right: 21px;
+  background: transparent;
+  border: none;
+}
+
+.list-items {
+  margin-right: -60px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-items {
+    margin-right: 0 !important;
+  }
+}
+
+.menu {
+  position: absolute;
+  right: 40px;
+}
+
+.dropdown {
+  display: none !important;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b9d448), to(#3b76b8));
+  background: linear-gradient(180deg, #b9d448 0%, #3b76b8 100%);
+}
+
+.dropdown li {
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-left: 10px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: white;
+}
+
+.open {
+  display: block !important;
+}
+
+.hidden-border {
+  border: transparent !important;
 }
 /*# sourceMappingURL=main.css.map */

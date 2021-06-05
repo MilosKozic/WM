@@ -4,51 +4,91 @@
     display: flex;
     align-items: center;    
     flex-direction: $direction;
-    justify-content: start;
+    justify-content: center;
 } 
-
-.nav {
- background: white;
  
-   #{&}1 {
+   nav {
         @include flex(row);
         border-bottom: 5px solid ;
+        margin-top: 4px;
+        padding-bottom: 4px;
         border-image: linear-gradient(90deg, rgba(185,212,72,100) , rgba(58,117,184,100)  )100;
-
          .list{
-           @include flex(row);
+           display: flex;
+           flex-direction: row;
            list-style: none;
-
+           
             .list-items a{
                 text-decoration: none;
-                margin: auto 5px;
-
-                span{
+                   span{
                     @media (max-width:767px) {
                         visibility: hidden;
-                     }
-                  }
-                img{
-                    width: 20px;
-                    height: 20px;
-                    @media screen and (min-width: 767px){
-                        visibility: hidden;
-                    }
-                    @media screen and (max-width: 479px){
-                        visibility: hidden;  
-                    }
-                  }
-                }
+                             }
+                       }
+                
+                        }
               }
-         }     
-}
+         } 
 
+ .icons{
+          @media screen and (min-width: 768px){
+                visibility: hidden;
+           }
+          @media screen and (max-width: 479px){
+            visibility: hidden;  
+            }
+          }
 #company-name{
     color:gray ;
     span{
         color: $hover-color1;
     }
+    position: absolute;
+    left: 21px;
 }
 .main {
     background-color: gray;
+}
+#search-btn{
+    position: absolute;
+    right: 21px;
+    background: transparent;
+    border: none;
+}
+.list-items {
+   margin-right: -60px;
+}
+
+@media screen and(min-width: 768px){
+    .list-items {
+        margin-right: 0 !important;
+    }
+    
+}
+.menu {
+    position: absolute;
+    right: 40px;
+}
+.dropdown{
+    display: none !important;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $linear-gradient;
+    li {
+        width: 100%;
+        border-bottom: 1px solid white ;
+        padding-left: 10px;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+}
+.open{
+    display: block !important;
+}
+.hidden-border {
+    border: transparent !important;
 }

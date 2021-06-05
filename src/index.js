@@ -6,6 +6,9 @@ const next = document.querySelector('.next')
 const dot1 = document.querySelector('#dot1')
 const dot2 = document.querySelector('#dot2')
 const dot3 = document.querySelector('#dot3')
+const burgerMenu = document.querySelector('.menu')
+const dropdown = document.querySelector('.dropdown')
+const nav = document.querySelector('#nav')
 
 var n = 0
 
@@ -41,5 +44,20 @@ next.addEventListener('click',()=>{
  p.textContent=paragraph[n+1]
  check(n+2)
   n++
+})
+
+var menuActive = false
+burgerMenu.addEventListener('click', () =>{
+
+    if(menuActive){
+        dropdown.classList.add('open')
+        nav.classList.add('hidden-border')
+    }
+    else{
+        dropdown.classList.remove('open')
+        nav.classList.remove('hidden-border')
+
+    }
+    menuActive=!menuActive  
 })
 
