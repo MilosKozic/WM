@@ -28,7 +28,7 @@ input[type="radio"]:checked::after{
     background-color: #bcd546;
     content: '';
     display: inline-block;
-    visibility: visible;    
+    visibility: visible;      
 }
 input[type="radio"]::after{
     width: 15px;
@@ -40,13 +40,13 @@ input[type="radio"]::after{
     background-color: gray;
     content: '';
     display: inline-block;
-    visibility: visible;    
+    visibility: visible;     
 }
 
 
 input[type="radio"]{
     margin-left: 10px;
-    transform: scale(0.6);
+    transform: scale(0.6);   
 }
 
 

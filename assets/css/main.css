@@ -93,7 +93,50 @@ input[type="radio"] {
 }
 
 .footer {
-  background-color: aquamarine;
+  background-color: #dbdbdb;
+  height: 59px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-container {
+  margin-left: 13px;
+  margin-right: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-container a {
+  font-size: 23px;
+  display: inline-block;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 19px;
+  color: #6d6e71;
+}
+
+.footer .footer-container .footer-item-start a i {
+  position: relative;
+  top: 8px;
+  left: 9px;
+}
+
+.footer .footer-container .footer-item-end {
+  position: absolute;
+  right: 14px;
+}
+
+.footer .footer-container .footer-item-end a i {
+  position: relative;
+  top: 8px;
+  left: 14px;
 }
 
 nav {
@@ -159,10 +202,6 @@ nav .list .list-items a {
 
 #company-name span {
   color: #b9d448;
-}
-
-.main {
-  background-color: gray;
 }
 
 #search-btn {
@@ -246,7 +285,7 @@ nav .list .list-items a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: lightgray;
+  background: #f3f3f3;
 }
 
 .slide-img {

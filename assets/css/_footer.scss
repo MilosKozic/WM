@@ -1,3 +1,42 @@
 .footer{
-    background-color: aquamarine;
+    background-color: rgb(219,219,219);
+    height: 59px;
+    align-items: center;
+    display: flex;
+    #{&}-container{
+        margin-left:13px ;
+        margin-right: 13px;
+        display: flex;  
+        
+       a{
+        font-size: 23px;
+        display: inline-block;
+        background-color: rgb(243, 243, 243);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin-right: 19px;
+        color: rgb(109, 110, 113);
+        }
+    .footer-item-start{    
+              
+         a  i{
+               position: relative;
+               top:8px;
+               left:9px;
+           }
+        
+                       }
+    .footer-item-end{
+        position: absolute;
+        right: 14px;
+        
+            a  i{
+               position: relative;
+               top:8px;
+               left:14px;
+           }
+        
+                    }                   
+               }
 }
