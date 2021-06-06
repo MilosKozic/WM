@@ -95,8 +95,9 @@ input[type="radio"] {
 .footer {
   background-color: #dbdbdb;
   height: 59px;
-  padding-right: 40px;
-  padding-left: 40px;
+  width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,14 +129,17 @@ input[type="radio"] {
           justify-content: space-between;
 }
 
+.footer #footer-icons-container a {
+  margin-right: 15px;
+}
+
 .footer .footer-icons {
-  font-size: 23px;
+  font-size: 22px;
   display: inline-block;
   background-color: #f3f3f3;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  margin-left: 14px;
+  height: 38px;
+  width: 38px;
   color: #6d6e71;
   text-decoration: none;
   display: -webkit-box;
@@ -175,7 +179,7 @@ input[type="radio"] {
 
 @media (max-width: 767px) {
   .footer .footer-menu {
-    visibility: hidden;
+    display: none !important;
   }
 }
 
@@ -292,11 +296,22 @@ main {
   -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
      border-image: -webkit-gradient(linear, left top, right top, from(#b9d448), to(#3a75b8)) 100;
      border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #search-input {
   display: none;
   width: 90%;
+  margin: 5px;
 }
 
 .search-active {
@@ -348,6 +363,10 @@ main {
 #nav #company-name {
   position: absolute;
   left: 33px;
+}
+
+.icons {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {

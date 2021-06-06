@@ -8,25 +8,28 @@
 .footer{
     background-color: rgb(219,219,219);  
     height: 59px;
-    padding-right: 40px;
-    padding-left: 40px;
+    width: 100%;
+    padding-left:4%;
+    padding-right: 4%;
+    
   @include flex(row,space-between);
 
     #footer-icons-container{
-   
         @include flex(row,space-between);
+       a{
+           margin-right: 15px;
+       }
     }
-       .footer-icons{
-        font-size: 23px;
+     .footer-icons{
+        font-size: 22px;
         display: inline-block;
         background-color: rgb(243, 243, 243);
         border-radius: 50%;
-        height: 40px;
-        width: 40px;     
-        margin-left: 14px;
-        color: rgb(109, 110, 113);
-      
+        height: 38px;
+        width: 38px;     
+        color: rgb(109, 110, 113);  
         text-decoration: none;
+
         @include flex(row,center);
         &:focus,&:visited,&:focus,&:visited{
             color:#bbd548 ;
@@ -37,7 +40,7 @@
         
             @include flex(row,center);
             @media (max-width:767px) {
-                visibility: hidden;
+                display: none !important;
             }
             li{
                 list-style: none;
