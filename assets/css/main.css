@@ -95,6 +95,8 @@ input[type="radio"] {
 .footer {
   background-color: #dbdbdb;
   height: 59px;
+  padding-right: 40px;
+  padding-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,6 +151,10 @@ input[type="radio"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer .footer-icons:focus, .footer .footer-icons:visited, .footer .footer-icons:focus, .footer .footer-icons:visited {
+  color: #bbd548;
 }
 
 .footer .footer-menu {
@@ -281,7 +287,23 @@ main {
   }
 }
 
-nav {
+#navbar {
+  border-bottom: 8px solid;
+  -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
+     border-image: -webkit-gradient(linear, left top, right top, from(#b9d448), to(#3a75b8)) 100;
+     border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
+}
+
+#search-input {
+  display: none;
+  width: 90%;
+}
+
+.search-active {
+  display: block !important;
+}
+
+#nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,15 +317,12 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 5px solid;
-  margin-top: 4px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding-bottom: 4px;
-  -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
-     border-image: -webkit-gradient(linear, left top, right top, from(#b9d448), to(#3a75b8)) 100;
-     border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
 }
 
-nav .list {
+#nav .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,14 +333,21 @@ nav .list {
   list-style: none;
 }
 
-nav .list .list-items a {
+#nav .list .list-items a {
   text-decoration: none;
+  color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
-  nav .list .list-items a span {
+  #nav .list .list-items a span {
     visibility: hidden;
   }
+}
+
+#nav #company-name {
+  position: absolute;
+  left: 33px;
 }
 
 @media screen and (min-width: 768px) {
@@ -336,21 +362,12 @@ nav .list .list-items a {
   }
 }
 
-#company-name {
-  color: gray;
-  position: absolute;
-  left: 21px;
-}
-
-#company-name span {
-  color: #b9d448;
-}
-
 #search-btn {
   position: absolute;
   right: 21px;
   background: transparent;
   border: none;
+  color: #757575;
 }
 
 .list-items {
@@ -407,12 +424,15 @@ nav .list .list-items a {
 }
 
 .hidden-border {
-  border: transparent;
+  border: transparent !important;
 }
 
 @media screen and (min-width: 480px) {
   .hidden-border {
-    border: linear-gradient(90deg, #b9d448, #3a75b8) 100 !important;
+    border-bottom: 8px solid !important;
+    -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100 !important;
+       border-image: -webkit-gradient(linear, left top, right top, from(#b9d448), to(#3a75b8)) 100 !important;
+       border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100 !important;
   }
 }
 

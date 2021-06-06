@@ -6,13 +6,24 @@
     flex-direction: $direction;
     justify-content: center;
 } 
- 
-nav {
-        @include flex(row);
-        border-bottom: 5px solid ;
-        margin-top: 4px;
+#navbar{
+    border-bottom: 8px solid ;
+    border-image: linear-gradient(90deg, rgba(185,212,72,100) , rgba(58,117,184,100)  )100;
+}
+#search-input{
+    display: none ;
+    width:90%;
+}
+.search-active{
+    display: block !important;  
+}
+
+#nav {
+        @include flex(row);       
+        margin-top: 25px;
+        margin-bottom: 25px;
         padding-bottom: 4px;
-        border-image: linear-gradient(90deg, rgba(185,212,72,100) , rgba(58,117,184,100)  )100;
+        
          .list{
            display: flex;
            flex-direction: row;
@@ -20,6 +31,8 @@ nav {
            
             .list-items a{
                 text-decoration: none;
+                color: rgb(117, 117, 117);
+                font-family: Arial, Helvetica, sans-serif;
                          span{
                     @media (max-width:767px) {
                         visibility: hidden;
@@ -27,6 +40,10 @@ nav {
                         }
                 
              }
+         }
+         #company-name{
+             position: absolute;
+             left:33px;
          }
 } 
 
@@ -39,20 +56,12 @@ nav {
             }
  }
 
-#company-name{
-    color:gray ;
-    span{
-        color: $hover-color1;
-    }
-    position: absolute;
-    left: 21px;
-}
-
 #search-btn{
     position: absolute;
     right: 21px;
     background: transparent;
     border: none;
+    color: rgb(117, 117, 117);
 }
 
 .list-items {
@@ -95,9 +104,10 @@ nav {
 
 }
 .hidden-border {
-    border: transparent ;
+    border: transparent !important;
     @media  screen and (min-width:480px) {
-        border: linear-gradient(90deg, rgba(185,212,72,100) , rgba(58,117,184,100)  )100 !important;
+        border-bottom: 8px solid !important;
+        border-image: linear-gradient(90deg, rgba(185,212,72,100) , rgba(58,117,184,100)  )100 !important;
     }
 }
 

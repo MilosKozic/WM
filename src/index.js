@@ -10,6 +10,9 @@ const dot3 = document.querySelector('#dot3')
 const burgerMenu = document.querySelector('.menu')
 const dropdown = document.querySelector('.dropdown')
 const nav = document.querySelector('#nav')
+const navbar = document.querySelector('#navbar')
+const search = document.querySelector('#search-input')
+const searchBtn = document.querySelector('#search-btn')
 
 var n = 0
 
@@ -57,15 +60,26 @@ burgerMenu.addEventListener('click', () =>{
 
     if(menuActive){
         dropdown.classList.add('open')
-        nav.classList.add('hidden-border')
+        navbar.classList.add('hidden-border')
         burgerMenu.classList.add('active')
     }
     else{
         dropdown.classList.remove('open')
-        nav.classList.remove('hidden-border')
+        navbar.classList.remove('hidden-border')
         burgerMenu.classList.remove('active')
 
     }
     menuActive=!menuActive  
+})
+
+var searchAtive = false;
+searchBtn.addEventListener('click',()=>{
+   
+    if(searchAtive){
+        search.classList.add('search-active')
+    }else{
+        search.classList.remove('search-active')
+    }
+    searchAtive=!searchAtive
 })
 
