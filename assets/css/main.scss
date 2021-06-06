@@ -31,12 +31,12 @@
          .list{
            display: flex;
            flex-direction: row;
-           list-style: none;
-           
+           list-style: none;   
             .list-items a{
                 text-decoration: none;
                 color: rgb(117, 117, 117);
                 font-family: Arial, Helvetica, sans-serif;
+                
                          span{
                     @media (max-width:767px) {
                         visibility: hidden;
@@ -47,7 +47,7 @@
          }
          #company-name{
              position: absolute;
-             left:33px;
+             left:30px;
          }
 } 
 
@@ -117,26 +117,3 @@
     }
 }
 
-.slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgb(243, 243, 243);
-}
-.slide-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    img {
-        margin-right: 25px;
-    }
-}
-@media  screen and (max-width:480px) {
-    .dots {
-        display: none !important;
-    }
-    .head-text {
-        display: none !important;
-    }
-}

@@ -43,6 +43,9 @@ html {
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #757575;
+  font-weight: bold;
 }
 
 .slide__button button {
@@ -52,7 +55,7 @@ html {
   background-color: transparent;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .slide__button {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -90,6 +93,66 @@ input[type="radio"] {
   margin-left: 10px;
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f3f3f3;
+}
+
+.slide-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slide-img img {
+  margin-right: 25px;
+  display: inline-block;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+}
+
+@media screen and (max-width: 479px) {
+  .dots {
+    display: none !important;
+  }
+  .head-text {
+    display: none !important;
+  }
+}
+
+.head-text {
+  color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.dots {
+  padding-bottom: 12px;
 }
 
 .footer {
@@ -189,10 +252,10 @@ input[type="radio"] {
 
 .footer .footer-menu li a {
   text-decoration: none;
-  padding-right: 6px;
+  padding-right: 15px;
   font-family: Arial, Helvetica, sans-serif;
   color: #757575;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .section {
@@ -227,6 +290,11 @@ input[type="radio"] {
 .section .main-section i {
   font-size: 45px;
   color: #6d6e71;
+  cursor: pointer;
+}
+
+.section .main-section i:hover, .section .main-section i:visited, .section .main-section i:focus, .section .main-section i:active {
+  color: #bbd548;
 }
 
 .section .text-section {
@@ -244,10 +312,14 @@ input[type="radio"] {
 
 .section .text-section p {
   font-size: 13px;
+  color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .section .text-section h4 {
   padding-bottom: 5px;
+  color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .section .text-section button {
@@ -265,7 +337,7 @@ main h3 {
   color: #6f6f6f;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 29px;
+  font-size: 25px;
   margin-left: 33.3%;
 }
 
@@ -362,7 +434,7 @@ main {
 
 #nav #company-name {
   position: absolute;
-  left: 33px;
+  left: 30px;
 }
 
 .icons {
@@ -452,49 +524,6 @@ main {
     -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100 !important;
        border-image: -webkit-gradient(linear, left top, right top, from(#b9d448), to(#3a75b8)) 100 !important;
        border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100 !important;
-  }
-}
-
-.slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f3f3f3;
-}
-
-.slide-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slide-img img {
-  margin-right: 25px;
-}
-
-@media screen and (max-width: 480px) {
-  .dots {
-    display: none !important;
-  }
-  .head-text {
-    display: none !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
