@@ -1,6 +1,7 @@
 const paragraph = ['LOREM IPSUM DOLOR SIT','LOREM IPSUM DOLOR SIT2', 'LOREM IPSUM DOLOR SIT3']
 
 const p = document.querySelector('.head-text')
+const p1 = document.querySelector('.head-text1')
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 const dot1 = document.querySelector('#dot1')
@@ -14,14 +15,17 @@ var n = 0
 
 dot2.addEventListener('click',()=>{
     p.textContent=paragraph[1]
+    p1.textContent=paragraph[1]
     n=1
 })
 dot1.addEventListener('click',()=>{
     p.textContent=paragraph[0]
+    p1.textContent=paragraph[0]
     n=0
 })
 dot3.addEventListener('click',()=>{
     p.textContent=paragraph[2]
+    p1.textContent=paragraph[2]
     n=1
 })
 
@@ -35,6 +39,7 @@ function check(n) {
 prev.addEventListener('click',()=>{
     if(n==0) n=3 
     p.textContent= paragraph[n-1]
+    p1.textContent=paragraph[n-1]
     check(n)
     n--    
 })
@@ -42,6 +47,7 @@ prev.addEventListener('click',()=>{
 next.addEventListener('click',()=>{
  if(n==2) n=-1
  p.textContent=paragraph[n+1]
+ p1.textContent=paragraph[n+1]
  check(n+2)
   n++
 })
@@ -52,10 +58,12 @@ burgerMenu.addEventListener('click', () =>{
     if(menuActive){
         dropdown.classList.add('open')
         nav.classList.add('hidden-border')
+        burgerMenu.classList.add('active')
     }
     else{
         dropdown.classList.remove('open')
         nav.classList.remove('hidden-border')
+        burgerMenu.classList.remove('active')
 
     }
     menuActive=!menuActive  

@@ -1,5 +1,5 @@
 .slide__button{
-    display: flex;
+    display: none;
     justify-content: space-between;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -12,6 +12,10 @@
         border: none;
         background-color: transparent;
     }
+    @media screen and (max-width:480px){
+        display: flex !important;
+    }
+
 }
 
 input[type="radio"]:checked::after{

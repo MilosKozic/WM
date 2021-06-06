@@ -88,7 +88,38 @@
 }
 .open{
     display: block !important;
+    @media  screen and (min-width:480px) {
+        display: none !important;
+    }
+
 }
 .hidden-border {
-    border: transparent !important;
+    border: transparent ;
+    @media  screen and (min-width:480px) {
+        border: linear-gradient(90deg, rgba(185,212,72,100) , rgba(58,117,184,100)  )100 !important;
+    }
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgray;
+}
+.slide-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-right: 25px;
+    }
+}
+@media  screen and (max-width:480px) {
+    .dots {
+        display: none !important;
+    }
+    .head-text {
+        display: none !important;
+    }
 }
