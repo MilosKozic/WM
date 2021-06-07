@@ -3,8 +3,8 @@
     justify-content: space-between;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    padding-top:24px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(117, 117, 117);
@@ -14,6 +14,7 @@
         padding-right: 5px;
         border: none;
         background-color: transparent;
+        color: rgb(117, 117, 117);
     }
     @media screen and (max-width:479px){
         display: flex !important;
@@ -50,6 +51,7 @@ input[type="radio"]::after{
 input[type="radio"]{
     margin-left: 10px;
     transform: scale(0.6);   
+    cursor: pointer;
 }
 
 
@@ -58,21 +60,24 @@ input[type="radio"]{
     flex-direction: column;
     align-items: center;
     background: rgb(243, 243, 243);
+
 }
 .slide-img {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  
     img {
         margin-right: 25px;
         display: inline-block;
-        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
             display: inline-block;
             width: 170px;
             height: 170px;
+         
         
     }
 }
@@ -89,6 +94,9 @@ input[type="radio"]{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 28px;
+    padding-left: 30px;
+    padding-right: 40px;
+  
 }
 .dots{
     padding-bottom: 12px;

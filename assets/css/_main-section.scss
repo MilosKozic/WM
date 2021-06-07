@@ -9,15 +9,20 @@
         background-color: rgb(233, 233, 233);
         display: inline-block;
         height: 113px;
-        width: 188px;
+        width: 185px;
         margin: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media  screen and (max-width:479px) {
+            height: 100px !important;
+            width: 168px !important;
+        }
         i{
             font-size: 45px;
             color: rgb(109, 110, 113);
             cursor: pointer;
+
         }
         i:hover,i:visited,i:focus,i:active{
             color: #bbd548;
@@ -29,6 +34,10 @@
         margin: 30px;
         display: flex;
         flex-direction: column;
+        @media  screen and (max-width:479px) {
+            height: 100px !important;
+            width: 168px !important;
+        }
         
         p{
             font-size: 13px;
@@ -49,6 +58,7 @@
             font-size: 9px;
             position: relative;
             left: 123px;
+            cursor: pointer;
         }
     }
   
@@ -58,8 +68,17 @@ main h3 {
     color: rgb(111, 111, 111);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 25px;
-   margin-left: 33.3%;
+    font-size: 35px;
+    text-align: center !important;
+     margin-right: 195px !important;
+     @media  screen and (max-width:479px) {
+         font-size: 20px !important;
+         text-align: center !important;
+         margin-right: 40px !important;
+     }
+    //  @media only screen and (max-width: 767px) and (min-width: 480px){
+    //    margin-left: 2%;
+    //  }
 }
 main{
     margin: 20px;

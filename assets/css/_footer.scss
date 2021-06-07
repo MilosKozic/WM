@@ -31,7 +31,7 @@
         text-decoration: none;
 
         @include flex(row,center);
-        &:focus,&:visited,&:focus,&:visited{
+        &:hover,&:visited,&:focus,&:visited{
             color:#bbd548 ;
         }
         }   
