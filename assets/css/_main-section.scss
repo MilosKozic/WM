@@ -44,7 +44,7 @@
             color: rgb(117, 117, 117);
             font-family: Arial, Helvetica, sans-serif;
             @media screen and (max-width:479px) {
-                display: none ;
+                display: none !important ;
             }
          
         }

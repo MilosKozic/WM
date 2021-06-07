@@ -110,6 +110,10 @@ input[type="radio"] {
       -ms-flex-align: center;
           align-items: center;
   background: #f3f3f3;
+  background-image: url("../images/dots.png");
+  background-repeat: no-repeat;
+  background-size: 98% 50%;
+  background-position: center;
 }
 
 .slide-img {
@@ -338,7 +342,7 @@ input[type="radio"] {
 
 @media screen and (max-width: 479px) {
   .section .text-section p {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -461,27 +465,35 @@ main {
 }
 
 #nav .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
+  position: absolute;
+  left: 36%;
+}
+
+#nav .list:hover {
+  background: -webkit-linear-gradient(360deg, #b9d448, #3a75b8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #nav .list .list-items a {
   text-decoration: none;
   color: #757575;
   font-family: Arial, Helvetica, sans-serif;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 15px;
 }
 
 @media (max-width: 767px) {
   #nav .list .list-items a span {
-    visibility: hidden;
+    display: none !important;
   }
 }
 
@@ -492,10 +504,7 @@ main {
 
 .icons {
   font-size: 18px;
-}
-
-.icons:hover {
-  color: red;
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -506,7 +515,7 @@ main {
 
 @media screen and (max-width: 479px) {
   .icons {
-    visibility: hidden;
+    display: none !important;
   }
 }
 
@@ -516,16 +525,7 @@ main {
   background: transparent;
   border: none;
   color: #757575;
-}
-
-.list-items {
-  margin-right: -60px;
-}
-
-@media screen and (min-width: 768px) {
-  .list-items {
-    margin-right: 0 !important;
-  }
+  cursor: pointer;
 }
 
 .menu {
