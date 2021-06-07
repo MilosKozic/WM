@@ -336,8 +336,14 @@ input[type="radio"] {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 479px) {
+  .section .text-section p {
+    display: none;
+  }
+}
+
 .section .text-section h4 {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   color: #757575;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -350,8 +356,10 @@ input[type="radio"] {
   height: 20px;
   font-size: 9px;
   position: relative;
-  left: 123px;
+  left: 100px;
   cursor: pointer;
+  font-size: 12px;
+  color: #757575;
 }
 
 main h3 {
@@ -390,6 +398,12 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .paragraph-active {
+    display: inline-block !important;
   }
 }
 

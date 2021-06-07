@@ -13,6 +13,8 @@ const nav = document.querySelector('#nav')
 const navbar = document.querySelector('#navbar')
 const search = document.querySelector('#search-input')
 const searchBtn = document.querySelector('#search-btn')
+const showBtn = document.querySelector('.show-more')
+const pSection = document.querySelector('#txt')
 
 var n = 0
 
@@ -83,3 +85,13 @@ searchBtn.addEventListener('click',()=>{
     searchAtive=!searchAtive
 })
 
+var showClass = false
+
+showBtn.addEventListener('click',()=>{
+    if(showClass){
+        pSection.classList.add('paragraph-active')
+    }else{
+        pSection.classList.remove('paragraph-active')
+    }
+    showClass=!showClass
+})
