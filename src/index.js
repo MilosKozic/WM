@@ -15,6 +15,8 @@ const search = document.querySelector('#search-input')
 const searchBtn = document.querySelector('#search-btn')
 const showBtn = document.querySelector('.show-more')
 const pSection = document.querySelector('#txt')
+const showBtn2 = document.querySelector('.show-more2')
+const pSection2 = document.querySelector('#txt2')
 
 var n = 0
 
@@ -96,4 +98,16 @@ showBtn.addEventListener('click',()=>{
         showBtn.textContent="Show more"
     }
     showClass=!showClass
+})
+var showClass2 = false
+
+showBtn2.addEventListener('click',()=>{
+    if(showClass2){
+        pSection2.classList.add('paragraph-active')
+        showBtn2.textContent="Show less"
+    }else{
+        pSection2.classList.remove('paragraph-active')
+        showBtn2.textContent="Show more"
+    }
+    showClass2=!showClass2
 })

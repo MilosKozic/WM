@@ -350,6 +350,7 @@ input[type="radio"] {
 
 .section .text-section button {
   border: none;
+  border-radius: 4px;
   display: inline-block;
   background: #f3f3f3;
   width: 75px;
@@ -361,6 +362,11 @@ input[type="radio"] {
   font-size: 11px;
   color: #757575;
   text-transform: uppercase;
+}
+
+.section .text-section button:hover, .section .text-section button:visited, .section .text-section button:focus, .section .text-section button:visited {
+  background: #bbd548;
+  color: white;
 }
 
 main h3 {
