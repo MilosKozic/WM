@@ -6,15 +6,15 @@
 }
 
 
-#home:hover{
+#home:hover,#home:active,#home:focus{
 @include hovericons(-webkit-linear-gradient(360deg, rgba(185,212,72,100) , rgba(158,192,96,100)  ));
 }
-#aboutus:hover{
+#aboutus:hover,#aboutus:active,#aboutus:focus{
     @include hovericons(-webkit-linear-gradient(360deg, rgba(158,192,96,100), rgba(130,171,120,100) ));
 }
-#ourwork:hover{
+#ourwork:hover,#ourwork:active,#ourwork:focus{
     @include hovericons(-webkit-linear-gradient(360deg, rgba(130,171,120,100), rgba(95,145,151,100) ));
 }
-#contact:hover{
+#contact:hover,#contact:active,#contact:focus{
     @include hovericons(-webkit-linear-gradient(360deg, rgba(95,145,151,100) , rgba(58,117,184,100) ));
 }

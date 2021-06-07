@@ -18,6 +18,9 @@
     display: none ;
     width:90%;
     margin:5px;
+    @media screen and (min-width:767px) {
+        width: 400px !important;
+    }
 }
 .search-active{
     display: block !important;  
@@ -38,26 +41,26 @@
 
             .list-items a{
                 text-decoration: none;
-                color: rgb(117, 117, 117);
+                color: rgb(117, 117, 117) ;              
                 font-family: Arial, Helvetica, sans-serif;
                 padding-right: 15px;
-                span{                                    
+           
+                span{                                 
                     @media (max-width:767px) {
                         display: none !important;                      
                                }
                      }
                 
-             }
-         }
+                       }
+                }
          #company-name{
              position: absolute;
              left:25px;            
-         }
+                       }
 } 
 
 .icons{
     font-size: 18px;  
-    
     padding-left: 20px;
           @media screen and (min-width: 768px){
                 display: none !important;

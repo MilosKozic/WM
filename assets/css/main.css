@@ -452,28 +452,28 @@ main {
   }
 }
 
-#home:hover {
+#home:hover, #home:active, #home:focus {
   background: -webkit-linear-gradient(360deg, #b9d448, #9ec060);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#aboutus:hover {
+#aboutus:hover, #aboutus:active, #aboutus:focus {
   background: -webkit-linear-gradient(360deg, #9ec060, #82ab78);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#ourwork:hover {
+#ourwork:hover, #ourwork:active, #ourwork:focus {
   background: -webkit-linear-gradient(360deg, #82ab78, #5f9197);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#contact:hover {
+#contact:hover, #contact:active, #contact:focus {
   background: -webkit-linear-gradient(360deg, #5f9197, #3a75b8);
   background-clip: text;
   -webkit-background-clip: text;
@@ -501,6 +501,12 @@ main {
   display: none;
   width: 90%;
   margin: 5px;
+}
+
+@media screen and (min-width: 767px) {
+  #search-input {
+    width: 400px !important;
+  }
 }
 
 .search-active {
