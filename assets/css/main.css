@@ -139,8 +139,47 @@ input[type="radio"] {
   padding-bottom: 20px;
   padding-left: 20px;
   display: inline-block;
-  width: 170px;
-  height: 170px;
+  width: 135px;
+  height: 135px;
+}
+
+@media screen and (min-width: 767px) {
+  .slide-img img {
+    width: 170px;
+    height: 170px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .slide-img img {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide-img img {
+    margin-left: 50px;
+  }
+}
+
+.head-text {
+  color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+@media screen and (min-width: 767px) {
+  .head-text {
+    font-size: 44px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -150,15 +189,6 @@ input[type="radio"] {
   .head-text {
     display: none !important;
   }
-}
-
-.head-text {
-  color: #757575;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  font-size: 28px;
-  padding-left: 30px;
-  padding-right: 40px;
 }
 
 .dots {
@@ -310,7 +340,11 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.section .main-section i:hover, .section .main-section i:visited, .section .main-section i:focus, .section .main-section i:active {
+.section .main-section:hover, .section .main-section:visited, .section .main-section:focus, .section .main-section:active {
+  cursor: pointer;
+}
+
+.section .main-section:hover i, .section .main-section:visited i, .section .main-section:focus i, .section .main-section:active i {
   color: #bbd548;
 }
 
@@ -342,7 +376,7 @@ input[type="radio"] {
 
 @media screen and (max-width: 479px) {
   .section .text-section p {
-    display: none !important;
+    display: none;
   }
 }
 
