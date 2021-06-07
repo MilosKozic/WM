@@ -6,6 +6,8 @@ Front-page design with SCSS, HTML and JS
 ## Setup
 To run this project you need to install
 
+View live - https://miloskozic.github.io/WM/
+
 * NodeJS (v14.15.1) - https://nodejs.org/en/
 *  npm - package manager for NodeJS
 
