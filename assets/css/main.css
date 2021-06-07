@@ -352,14 +352,15 @@ input[type="radio"] {
   border: none;
   display: inline-block;
   background: #f3f3f3;
-  width: 65px;
+  width: 75px;
   height: 20px;
   font-size: 9px;
   position: relative;
   left: 100px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 11px;
   color: #757575;
+  text-transform: uppercase;
 }
 
 main h3 {

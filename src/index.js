@@ -90,8 +90,10 @@ var showClass = false
 showBtn.addEventListener('click',()=>{
     if(showClass){
         pSection.classList.add('paragraph-active')
+        showBtn.textContent="Show less"
     }else{
         pSection.classList.remove('paragraph-active')
+        showBtn.textContent="Show more"
     }
     showClass=!showClass
 })
