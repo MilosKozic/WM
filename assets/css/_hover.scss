@@ -1,0 +1,20 @@
+@mixin hovericons($background){
+    background: $background;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+
+#home:hover{
+@include hovericons(-webkit-linear-gradient(360deg, rgba(185,212,72,100) , rgba(158,192,96,100)  ));
+}
+#aboutus:hover{
+    @include hovericons(-webkit-linear-gradient(360deg, rgba(158,192,96,100), rgba(130,171,120,100) ));
+}
+#ourwork:hover{
+    @include hovericons(-webkit-linear-gradient(360deg, rgba(130,171,120,100), rgba(95,145,151,100) ));
+}
+#contact:hover{
+    @include hovericons(-webkit-linear-gradient(360deg, rgba(95,145,151,100) , rgba(58,117,184,100) ));
+}

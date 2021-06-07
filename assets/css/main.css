@@ -418,6 +418,34 @@ main {
   }
 }
 
+#home:hover {
+  background: -webkit-linear-gradient(360deg, #b9d448, #9ec060);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#aboutus:hover {
+  background: -webkit-linear-gradient(360deg, #9ec060, #82ab78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#ourwork:hover {
+  background: -webkit-linear-gradient(360deg, #82ab78, #5f9197);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact:hover {
+  background: -webkit-linear-gradient(360deg, #5f9197, #3a75b8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #navbar {
   border-bottom: 8px solid;
   -o-border-image: linear-gradient(90deg, #b9d448, #3a75b8) 100;
@@ -475,13 +503,6 @@ main {
   list-style: none;
   position: absolute;
   left: 36%;
-}
-
-#nav .list:hover {
-  background: -webkit-linear-gradient(360deg, #b9d448, #3a75b8);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #nav .list .list-items a {
